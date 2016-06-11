@@ -1,0 +1,16 @@
+#!/bin/bash
+# /etc/acpi/powerbtn.sh
+# Initiates a shutdown when the power putton has been
+# pressed.
+name=("dji_sdk_client" "gedit")
+for p in ${name[@]}
+	do
+		$p
+		process=`ps -ef|grep $p|grep -v grep|grep -v PPID|awk '{ print }'`
+		for i in $process
+		do
+			echo "kill the $p process [$i]"
+			#kill -2 $i
+		done
+	done
+

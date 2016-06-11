@@ -1,0 +1,57 @@
+#! /bin/sh
+
+############################################################
+#do not change anything in this file if not ensured
+############################################################
+
+#---------------BUILD hitcsc_rootstart-------------------
+	path_hitcsc_sysstart=/etc/init.d
+	file_hitcsc_sysstart=hitcsc_sysstart
+	
+	path_hitcsc_rootstart=`pwd`
+	file_hitcsc_rootstart=rootstart
+
+	sysstart=${path_hitcsc_sysstart}/${file_hitcsc_sysstart}
+	rootstart=${path_hitcsc_rootstart}/${file_hitcsc_rootstart}
+	echo $sysstart
+	echo $path_hitcsc_rootstart
+	echo "#! /bin/sh
+	### BEGIN INIT INFO
+	# Provides:          start command set
+	# Required-Start:    $all
+	# Required-Stop:
+	# Default-Start:     2 3 4 5
+	# Default-Stop:
+	# Short-Description: Run start script
+	### END INIT INFO
+
+	PATH=/sbin:/usr/sbin:/bin:/usr/bin" >$sysstart
+	echo "	curpath=\`pwd\`">>$sysstart
+	echo "	cd "${path_hitcsc_rootstart}>>$sysstart
+	echo "	"${path_hitcsc_rootstart}"/"${file_hitcsc_rootstart} >>$sysstart
+	echo "	cd \$curpath">>$sysstart
+
+	chmod -R 777 $sysstart
+
+	update-rc.d -f $file_hitcsc_sysstart remove
+	update-rc.d -f $file_hitcsc_sysstart start 99 2 3 4 5 .
+
+	if [ -f $rootstart ]
+	then
+		echo ${rootstart}" exists overwrite?(y/n)"
+		read yesno
+		echo $yesno
+		if [ $yesno != "y" ]
+		then 	
+			echo "exist now"		
+			exit
+		fi		
+	fi
+	echo "#! /bin/bash" >$rootstart
+	echo "PATH=/sbin:/usr/sbin:/bin:/usr/bin" >>$rootstart
+	echo "curpath=\`pwd\`">>$rootstart
+	echo "logfile=\$curpath/info.txt">>$rootstart
+	echo "echo \"----------------------------------------\">>\$logfile">>$rootstart
+	echo "date >>\$logfile">>$rootstart
+	echo "env >>\$logfile" >>$rootstart
+	chmod -R 777 $rootstart

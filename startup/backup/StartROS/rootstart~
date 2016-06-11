@@ -1,0 +1,19 @@
+#! /bin/bash
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+curpath=`pwd`
+logfile=$curpath/info.txt
+echo "----------------------------------------">>$logfile
+date >>$logfile
+env >>$logfile
+
+	source /opt/ros/indigo/setup.bash
+	env >>$logfile
+	
+	cd /home/ubuntu/catkin_ws
+	source devel/setup.bash
+	
+
+	rosrun dji_sdk_demo dji_sdk_client >>$logfile 2>&1
+	#roslaunch dji_sdk_read_cam manifold_cam.launch >>$logfile 2>&1
+	#roslaunch dji_sdk sdk_manifold.launch
+	#catkin_make

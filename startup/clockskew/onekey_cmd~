@@ -1,0 +1,55 @@
+#! /bin/sh
+
+############################################################
+#do not change anything in this file if not ensured
+############################################################
+
+#---------------BUILD hitcsc_timerec-------------------
+	path_hitcsc_timerec=/etc/init.d
+	file_hitcsc_timerec=hitcsc_timerec
+	
+	path_hitcsc_timeset=/etc/init.d
+	file_hitcsc_timeset=hitcsc_timeset
+	
+	datefile=/etc/init.d/date.txt
+
+	timerec=${path_hitcsc_timerec}/${file_hitcsc_timerec}
+	timeset=${path_hitcsc_timeset}/${file_hitcsc_timeset}
+	echo $timerec
+	echo $timeset
+	echo "#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          record time
+# Required-Start:   	
+# Required-Stop:	
+# Default-Start:     
+# Default-Stop:		0 6
+# Short-Description: record time
+### END INIT INFO
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin" >$timerec
+	echo "date >"${datefile} >>$timerec
+	chmod -R 777 $timerec
+
+	update-rc.d -f $file_hitcsc_timerec remove
+	update-rc.d -f $file_hitcsc_timerec stop 25 0 6 .
+
+#---------------BUILD hitcsc_timeset-------------------
+	echo "#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          set time
+# Required-Start:   	
+# Required-Stop:	
+# Default-Start:     2 3 4 5
+# Default-Stop:		
+# Short-Description: set time
+### END INIT INFO
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin" >$timeset
+	echo "read line <"${datefile} >>$timeset
+	echo "date -s \"\$line\"" >>$timeset
+	chmod -R 777 $timeset
+
+	update-rc.d -f $file_hitcsc_timeset remove
+	update-rc.d -f $file_hitcsc_timeset start 10 2 3 4 5 .
+

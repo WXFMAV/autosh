@@ -1,0 +1,14 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          start command set
+# Required-Start:    $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: Run start script
+### END INIT INFO
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+./home/ubuntu/STARTUP/StartROS/rootstart
+

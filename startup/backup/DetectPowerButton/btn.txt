@@ -1,0 +1,5 @@
+---------------------------------------
+Fri May  6 00:25:24 CST 2016
+dji_sdk_client
+gedit
+kill the gedit process [3477]

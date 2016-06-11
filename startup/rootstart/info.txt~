@@ -1,0 +1,199 @@
+TERM=linux
+ROS_ROOT=/opt/ros/indigo/share/ros
+ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+ROS_MASTER_URI=http://localhost:11311
+LD_LIBRARY_PATH=/opt/ros/indigo/lib:/opt/ros/indigo/lib/arm-linux-gnueabihf
+CPATH=/opt/ros/indigo/include
+PATH=/opt/ros/indigo/bin:/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+ROSLISP_PACKAGE_DIRECTORIES=
+SHLVL=1
+ROS_DISTRO=indigo
+UPSTART_INSTANCE=
+PYTHONPATH=/opt/ros/indigo/lib/python2.7/dist-packages
+UPSTART_EVENTS=runlevel
+PKG_CONFIG_PATH=/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/arm-linux-gnueabihf/pkgconfig
+UPSTART_JOB=rc
+CMAKE_PREFIX_PATH=/opt/ros/indigo
+ROS_ETC_DIR=/opt/ros/indigo/etc/ros
+_=/usr/bin/env
+[31m[ERROR] [1462459885.640561083]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...[0m
+TERM=linux
+ROS_ROOT=/opt/ros/indigo/share/ros
+ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+ROS_MASTER_URI=http://localhost:11311
+LD_LIBRARY_PATH=/opt/ros/indigo/lib:/opt/ros/indigo/lib/arm-linux-gnueabihf
+CPATH=/opt/ros/indigo/include
+PATH=/opt/ros/indigo/bin:/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+ROSLISP_PACKAGE_DIRECTORIES=
+SHLVL=1
+ROS_DISTRO=indigo
+UPSTART_INSTANCE=
+PYTHONPATH=/opt/ros/indigo/lib/python2.7/dist-packages
+UPSTART_EVENTS=runlevel
+PKG_CONFIG_PATH=/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/arm-linux-gnueabihf/pkgconfig
+UPSTART_JOB=rc
+CMAKE_PREFIX_PATH=/opt/ros/indigo
+ROS_ETC_DIR=/opt/ros/indigo/etc/ros
+_=/usr/bin/env
+[31m[ERROR] [1462459887.170726916]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...[0m
+TERM=linux
+ROS_ROOT=/opt/ros/indigo/share/ros
+ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+ROS_MASTER_URI=http://localhost:11311
+LD_LIBRARY_PATH=/opt/ros/indigo/lib:/opt/ros/indigo/lib/arm-linux-gnueabihf
+CPATH=/opt/ros/indigo/include
+PATH=/opt/ros/indigo/bin:/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+ROSLISP_PACKAGE_DIRECTORIES=
+SHLVL=1
+ROS_DISTRO=indigo
+UPSTART_INSTANCE=
+PYTHONPATH=/opt/ros/indigo/lib/python2.7/dist-packages
+UPSTART_EVENTS=runlevel
+PKG_CONFIG_PATH=/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/arm-linux-gnueabihf/pkgconfig
+UPSTART_JOB=rc
+CMAKE_PREFIX_PATH=/opt/ros/indigo
+ROS_ETC_DIR=/opt/ros/indigo/etc/ros
+_=/usr/bin/env
+[31m[ERROR] [1462461190.274439416]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...[0m
+adrone->activation==0
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+TERM=linux
+ROS_ROOT=/opt/ros/indigo/share/ros
+ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+ROS_MASTER_URI=http://localhost:11311
+LD_LIBRARY_PATH=/opt/ros/indigo/lib:/opt/ros/indigo/lib/arm-linux-gnueabihf
+CPATH=/opt/ros/indigo/include
+PATH=/opt/ros/indigo/bin:/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+ROSLISP_PACKAGE_DIRECTORIES=
+SHLVL=1
+ROS_DISTRO=indigo
+UPSTART_INSTANCE=
+PYTHONPATH=/opt/ros/indigo/lib/python2.7/dist-packages
+UPSTART_EVENTS=runlevel
+PKG_CONFIG_PATH=/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/arm-linux-gnueabihf/pkgconfig
+UPSTART_JOB=rc
+CMAKE_PREFIX_PATH=/opt/ros/indigo
+ROS_ETC_DIR=/opt/ros/indigo/etc/ros
+_=/usr/bin/env
+[31m[ERROR] [1462463854.330057416]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...[0m
+adrone->activation==0
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+TERM=linux
+ROS_ROOT=/opt/ros/indigo/share/ros
+ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+ROS_MASTER_URI=http://localhost:11311
+LD_LIBRARY_PATH=/opt/ros/indigo/lib:/opt/ros/indigo/lib/arm-linux-gnueabihf
+CPATH=/opt/ros/indigo/include
+PATH=/opt/ros/indigo/bin:/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+ROSLISP_PACKAGE_DIRECTORIES=
+SHLVL=1
+ROS_DISTRO=indigo
+UPSTART_INSTANCE=
+PYTHONPATH=/opt/ros/indigo/lib/python2.7/dist-packages
+UPSTART_EVENTS=runlevel
+PKG_CONFIG_PATH=/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/arm-linux-gnueabihf/pkgconfig
+UPSTART_JOB=rc
+CMAKE_PREFIX_PATH=/opt/ros/indigo
+ROS_ETC_DIR=/opt/ros/indigo/etc/ros
+_=/usr/bin/env
+[31m[ERROR] [1462464501.228266999]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...[0m
+adrone->activation==0
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+---------------------------------------------------------
+TERM=linux
+ROS_ROOT=/opt/ros/indigo/share/ros
+ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+ROS_MASTER_URI=http://localhost:11311
+LD_LIBRARY_PATH=/opt/ros/indigo/lib:/opt/ros/indigo/lib/arm-linux-gnueabihf
+CPATH=/opt/ros/indigo/include
+PATH=/opt/ros/indigo/bin:/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+ROSLISP_PACKAGE_DIRECTORIES=
+SHLVL=1
+ROS_DISTRO=indigo
+UPSTART_INSTANCE=
+PYTHONPATH=/opt/ros/indigo/lib/python2.7/dist-packages
+UPSTART_EVENTS=runlevel
+PKG_CONFIG_PATH=/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/arm-linux-gnueabihf/pkgconfig
+UPSTART_JOB=rc
+CMAKE_PREFIX_PATH=/opt/ros/indigo
+ROS_ETC_DIR=/opt/ros/indigo/etc/ros
+_=/usr/bin/env
+Fri May  6 00:08:19 CST 2016
+[31m[ERROR] [1462464499.687322583]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...[0m
+adrone->activation==0
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+----------------------------------------
+Fri May  6 00:32:10 CST 2016
+TERM=linux
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+SHLVL=1
+UPSTART_INSTANCE=
+UPSTART_EVENTS=runlevel
+UPSTART_JOB=rc
+_=/usr/bin/env
+TERM=linux
+ROS_ROOT=/opt/ros/indigo/share/ros
+ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+ROS_MASTER_URI=http://localhost:11311
+LD_LIBRARY_PATH=/opt/ros/indigo/lib:/opt/ros/indigo/lib/arm-linux-gnueabihf
+CPATH=/opt/ros/indigo/include
+PATH=/opt/ros/indigo/bin:/sbin:/usr/sbin:/bin:/usr/bin
+RUNLEVEL=2
+runlevel=2
+PWD=/home/ubuntu/STARTUP/StartROS
+previous=N
+PREVLEVEL=N
+ROSLISP_PACKAGE_DIRECTORIES=
+SHLVL=1
+ROS_DISTRO=indigo
+UPSTART_INSTANCE=
+PYTHONPATH=/opt/ros/indigo/lib/python2.7/dist-packages
+UPSTART_EVENTS=runlevel
+PKG_CONFIG_PATH=/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/arm-linux-gnueabihf/pkgconfig
+UPSTART_JOB=rc
+CMAKE_PREFIX_PATH=/opt/ros/indigo
+ROS_ETC_DIR=/opt/ros/indigo/etc/ros
+_=/usr/bin/env
+[31m[ERROR] [1462465932.270305916]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...[0m
+adrone->activation==0
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 
+10.0000 0.5000 5.4000 2.0000 0.7500 0.5000 3.4000 0.5000 10.0000 30.0000 30.0000 30.0000 1.0000 1.2500 0.2500 2.6000 0.5000 0.0000 3.6000 2.6000 0.0200 10.0000 2.0000 

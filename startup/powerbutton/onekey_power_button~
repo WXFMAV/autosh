@@ -1,0 +1,74 @@
+#! /bin/sh
+
+############################################################
+#do not change anything in this file if not ensured
+############################################################
+
+#---------------BUILD hitcsc_rootstart-------------------
+	
+	curfile=`pwd`/powerpressed
+	sudo apt-get install acpid
+
+	if [ -f /etc/acpi/events/powerbtn ]
+	then
+		echo " powerbtn exists overwrite?(y/n)"
+		read yesno
+		echo $yesno
+		if [ $yesno != "y" ]
+		then 	
+			echo "exist now"		
+			exit
+		fi		
+	else
+		echo "can not found the /etc/acpi/events/powerbtn"
+		exit
+	fi
+
+	btnfile=/etc/acpi/events/powerbtn
+	echo "# /etc/acpi/events/powerbtn
+# This is called when the user presses the power button and calls
+# /etc/acpi/powerbtn.sh for further processing.
+
+# Optionally you can specify the placeholder %e. It will pass
+# through the whole kernel event message to the program you've
+# specified.
+
+# We need to react on \"button power.*\" and \"button/power.*\" because
+# of kernel changes.
+
+event=button[ /]power
+action=/etc/acpi/powerbtn.sh | "${curfile}> $btnfile
+	
+
+	if [ -f $curfile ]
+	then
+		echo ${curfile}" already exists overwrite?(y/n)"
+		read yesno
+		echo $yesno
+		if [ $yesno != "y" ]
+		then 	
+			echo "exist now"		
+			exit
+		fi		
+	fi
+
+	echo "#!/bin/bash
+# /etc/acpi/powerbtn.sh
+# Initiates a shutdown when the power putton has been
+# pressed." >$curfile		
+	echo "logfile=btn.txt
+echo \"---------------------------------------\">>\$logfile
+date >>\$logfile
+name=(\"dji_sdk_client\" \"gedit\")
+for p in \${name[@]}
+	do
+		echo \$p >>\$logfile
+		process=\`ps -ef|grep \$p|grep -v grep|grep -v PPID|awk '{ print \$2}'\`
+		for i in \$process
+		do
+			echo \"kill the \$p process [\$i]\" >>\$logfile
+			#kill -2 \$i >>\$logfile
+		done
+	done
+">>$curfile	
+	chmod -R 777 $curfile
