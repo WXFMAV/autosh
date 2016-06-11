@@ -1,0 +1,30 @@
+#!/bin/sh
+#This is a file that can make
+#
+	echo "START START START START START START"
+#-----------------------------------------------------------
+	echo $#
+	if [ $# -lt 1 ] 
+	then 
+		echo "error...no args"
+		exit 1
+	else
+		if [ $# -eq 1 ] 
+		then 
+			echo "input ok"
+		fi
+	fi
+	
+	for arg in "$@"
+	do
+		echo $arg
+	done	
+	
+	YOUR_FILE=$1
+	echo "Target:${YOUR_FILE}"
+	chmod -R 777 $YOUR_FILE
+#-----------------------------------------------------------
+	echo "OK OK OK OK OK OK OK OK OK OK OK OK"
+	
+	
+	
